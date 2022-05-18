@@ -9,8 +9,8 @@ let containerPassword = document.querySelector("#container-password");
 let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@$#&-_"
 let novaSenha = "";
 
-sizePassword.innerHTML = sliderElement.ariaValueMax;
+sizePassword.innerHTML = sliderElement.value;
 
-slider.oniput = function(){
+slider.oninput = function(){
     sizePassword.innerHTML = this.value;
 }
